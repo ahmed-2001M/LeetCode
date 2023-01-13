@@ -7,18 +7,18 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2022/03/25/testingdrawio.png" style="width: 201px; height: 241px;">
-<pre style="position: relative;"><strong>Input:</strong> parent = [-1,0,0,1,1,2], s = "abacbe"
+<pre><strong>Input:</strong> parent = [-1,0,0,1,1,2], s = "abacbe"
 <strong>Output:</strong> 3
 <strong>Explanation:</strong> The longest path where each two adjacent nodes have different characters in the tree is the path: 0 -&gt; 1 -&gt; 3. The length of this path is 3, so 3 is returned.
 It can be proven that there is no longer path that satisfies the conditions. 
-<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+</pre>
 
 <p><strong class="example">Example 2:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2022/03/25/graph2drawio.png" style="width: 201px; height: 221px;">
-<pre style="position: relative;"><strong>Input:</strong> parent = [-1,0,0,0], s = "aabc"
+<pre><strong>Input:</strong> parent = [-1,0,0,0], s = "aabc"
 <strong>Output:</strong> 3
 <strong>Explanation:</strong> The longest path where each two adjacent nodes have different characters is the path: 2 -&gt; 0 -&gt; 3. The length of this path is 3, so 3 is returned.
-<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+</pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
