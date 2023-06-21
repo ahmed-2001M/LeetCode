@@ -6,8 +6,8 @@ class Solution:
         a = sorted(a)
         res = 0
         for idx, val in enumerate(a):
-            res += int((val * idx) % (1e9+7))
-        return int(res % (1e9+7))
+            res = int((res + (val * idx) % (1e9+7))% (1e9+7))
+        return res
       
 
 
