@@ -2,14 +2,40 @@
 import bisect
 
 def find(arr,n,x):
-    # code here
+    left = -1
+    right = -1
+    
+    low = 0
+    high = n-1
+    while low <= high:
+        mid = (low+high)//2
+        if arr[mid] == x:
+            left = mid
+            high = mid-1
+        elif arr[mid] < x:
+            low = mid+1
+        else:
+            high = mid-1
+    
+    if left == -1:
+        return [left, right]
 
-    first = bisect.bisect_left(arr, x)
-    last = bisect.bisect_right(arr, x) - 1
-    if first <= last:
-        return [first, last]
-    else:
-        return [-1, -1]
+    low = left
+    high = n-1
+    while low <= high:
+        mid = (low+high)//2
+        if arr[mid] == x:
+            right = mid
+            low = mid+1
+        elif arr[mid] > x:
+            high = mid-1
+        else:
+            low = mid+1
+
+    return [left, right]
+    
+            
+        
 
 #{ 
  # Driver Code Starts
