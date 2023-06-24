@@ -4,9 +4,10 @@ class Solution:
     def lastIndex(self, s):
         # code here
         mx = -1
-        for idx, i in enumerate(s):
-            if i == '1':
+        for idx in range(len(s)-1 , -1 , -1):
+            if s[idx] == '1':
                 mx = idx
+                break
         return mx
         
 
