@@ -12,13 +12,15 @@ This is method only submission.
  You only need to complete below method.
 """
 def getNth(head, k):
-    c=1
-    while head.next:
+    c = 0
+    while head.next is not None:
+        c += 1
         if c == k:
             return head.data
-        c+=1
         head = head.next
-    return head.data
+    if k == c + 1:
+        return head.data
+    return None
 
 
 #{ 
