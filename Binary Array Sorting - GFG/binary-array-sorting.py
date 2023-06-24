@@ -6,7 +6,12 @@ class Solution:
     def binSort(self, A, N): 
         #Your code here
         #No need to print the array
-        A[:] = sorted(A)
+        count_0 = A.count(0)
+        for i in range(count_0):
+            A[i] = 0
+        for i in range(count_0,N):
+            A[i] = 1
+        
 
 
 #{ 
