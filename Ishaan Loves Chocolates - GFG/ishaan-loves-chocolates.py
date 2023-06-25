@@ -4,7 +4,16 @@ from typing import List
 class Solution:
     def chocolates(self, n : int, arr : List[int]) -> int:
         # code here
-        return min(arr)
+        n = len(arr)
+        l = 0
+        r = n-1
+        while l < r:
+            if arr[l] < arr[r]:
+                r-=1
+            else:
+                l+=1
+        return arr[r]
+        
 
 
 
